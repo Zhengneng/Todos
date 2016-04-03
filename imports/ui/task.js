@@ -8,9 +8,9 @@ import './task.html';
 
 Template.task.events({
 	'click .toggle-checked'() {
-		Metor.call('tasks.setChecked', this._id, !this.checked);
+		Meteor.call('tasks.setChecked', this._id, !this.checked);
 	},
 	'click .delete'() {
-		Metor.call('tasks.remove', this._id);
+		Meteor.call('tasks.remove', this._id);
 	},
 });
